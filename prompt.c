@@ -185,7 +185,7 @@ void subneting(char* input){
 	for(int i =0;i < subnets_cn ;i++){
 		Subnet* sn = subnets+i;
 		uint32_t max = 2;
-		sn->mask = 32;
+		sn->mask = 31;
 		while(sn->hosts > (max -2) ){
 			max <<= 1;
 			sn->mask--;
